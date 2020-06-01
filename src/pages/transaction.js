@@ -13,7 +13,7 @@ import { AUTH_TOKEN, USERNAME, REMEMBERME, URI } from '../config/constants'
 import { Button, Form, Container, Row, Col } from 'react-bootstrap';
 
 
-function Home() {
+function Transaction() {
     // const [id, setId] = useState('')
     // const [password, setPassword] = useState('')
     // const [checked, setChecked] = useState(false)
@@ -51,7 +51,7 @@ function Home() {
                             <Form.Label>Email address</Form.Label>
                             <Form.Control type="email" placeholder="Enter email" id="email" />
                             <Form.Text className="text-muted">
-                            We'll never share your email with anyone else.
+                            TransactionWe'll never share your email with anyone else.
                             </Form.Text>
                         </Form.Group>
 
@@ -76,4 +76,4 @@ function Home() {
     )
 }
 
-export default withRouter(Home)
+export default withRouter(Transaction)
