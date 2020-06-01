@@ -47,22 +47,35 @@ function Transaction() {
                 <Col>
                     <Form onSubmit={handleSubmit}>
 
-                        <Form.Group controlId="formBasicEmail">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" id="email" />
-                            <Form.Text className="text-muted">
-                            TransactionWe'll never share your email with anyone else.
-                            </Form.Text>
-                        </Form.Group>
-
-                        <Form.Group controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" placeholder="Password" id="password" />
-                        </Form.Group>
-
-                        <Form.Group controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" label="Check me out" id='checkbox' />
-                        </Form.Group>
+                        <Form.Group controlId="formBasicData">
+                            <Form.Label>Description</Form.Label>
+                            <Form.Control type="text" placeholder="Enter description" id="tx_description" />
+                            <Form.Label>Transaction date</Form.Label>
+                            <Form.Control type="date" id="tx_created_date" />
+                            <Form.Label>Category</Form.Label>
+                            <Form.Control as="select" id="tx_category">
+                            <option>INVESTMENT</option>
+                            <option>GROCERIES</option>
+                            <option>FOOD</option>
+                            <option>SERVICES</option>
+                            <option>RENT</option>
+                            <option>LEISURE</option>
+                            <option>EDUCATION</option>
+                            <option>SAVING</option>
+                            </Form.Control>
+                            <Form.Label>Amount</Form.Label>
+                            <Form.Control type="number" id="tx_amount" />
+                            <Form.Label>Type</Form.Label>
+                            <Form.Control as="select" id="tx_category">
+                            <option>CASHOUT</option>
+                            <option>CASHIN</option>
+                            </Form.Control>
+                            <Form.Label>Associate credit card</Form.Label>
+                            <Form.Control as="select" id="tx_category">
+                            <option>VISA BBVA</option>
+                            <option>MASTERCARD DEUTSCHE BANK</option>
+                            </Form.Control>
+                            </Form.Group>     
                         
                         <Button variant="primary" type="submit">
                             Submit

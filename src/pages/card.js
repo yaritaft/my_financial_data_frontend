@@ -47,22 +47,23 @@ function Card() {
                 <Col>
                     <Form onSubmit={handleSubmit}>
 
-                        <Form.Group controlId="formBasicEmail">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" id="email" />
-                            <Form.Text className="text-muted">
-                            CARDWe'll never share your email with anyone else.
-                            </Form.Text>
-                        </Form.Group>
-
-                        <Form.Group controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" placeholder="Password" id="password" />
-                        </Form.Group>
-
-                        <Form.Group controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" label="Check me out" id='checkbox' />
-                        </Form.Group>
+                    <Form.Group controlId="formBasicData">
+                            <Form.Label>Description</Form.Label>
+                            <Form.Control type="text" placeholder="Enter description" id="card_description" />
+                            <Form.Label>Bank</Form.Label>
+                            <Form.Control type="text" placeholder="Enter associated bank" id="card_bank" />
+                            <Form.Label>Card Type</Form.Label>
+                            <Form.Control as="select" id="card_type">
+                            <option>VISA</option>
+                            <option>MASTERCARD</option>
+                            <option>AMERICAN EXPRESS</option>
+                            </Form.Control>
+                            <Form.Label>Account</Form.Label>
+                            <Form.Control as="select" id="card_owner">
+                            <option>Personal account</option>
+                            <option>Business account</option>
+                            </Form.Control>
+                            </Form.Group>  
                         
                         <Button variant="primary" type="submit">
                             Submit

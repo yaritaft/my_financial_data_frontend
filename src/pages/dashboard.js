@@ -46,23 +46,18 @@ function Dashboard() {
             <Row className="justify-content-md-center">
                 <Col>
                     <Form onSubmit={handleSubmit}>
-
-                        <Form.Group controlId="formBasicEmail">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" id="email" />
-                            <Form.Text className="text-muted">
-                            DashboardWe'll never share your email with anyone else.
-                            </Form.Text>
-                        </Form.Group>
-
-                        <Form.Group controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" placeholder="Password" id="password" />
-                        </Form.Group>
-
-                        <Form.Group controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" label="Check me out" id='checkbox' />
-                        </Form.Group>
+                    <Form.Group controlId="formBasicCheckbox">
+                        <Row>
+                            <Col>
+                            <Form.Label inline>From date</Form.Label>
+                            <Form.Control inline label="" type="date" id="tx_created_date" />
+                            </Col>
+                            <Col>
+                            <Form.Label>To date</Form.Label>
+                            <Form.Control type="date" id="tx_created_date" />
+                            </Col>
+                        </Row>
+                    </Form.Group>
                         
                         <Button variant="primary" type="submit">
                             Submit
